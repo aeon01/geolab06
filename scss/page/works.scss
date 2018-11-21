@@ -1,0 +1,102 @@
+.works{
+    // width: 100%;
+    background-color: $black-primary;
+    padding-bottom: 70px;
+    h1{
+        color: $white;
+        text-transform: uppercase;
+        font-family: $QuattrocentoSansRegular;
+        font-size: 36px;
+        padding: 80px 0;
+         &::before{
+                content: "";
+                width: 7px;
+                height: 24px;
+                background-color: $primary;
+                opacity: .2;
+                display: inline-block;
+                margin-right: 12px;
+         }
+    }
+    img{
+        width: 100%;
+        height: 265px;
+    }
+}
+.container{
+    span{
+        a{  
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-family: $QuattrocentoSansRegular;
+            color: $white;
+            border: 1px solid $white;
+            padding: 13px 20px;
+            border-radius: 4px;
+            transition: $transition;
+                &:hover{
+                    background-color: $hover;
+                    border: 1px solid $hover;
+                    cursor: pointer;
+                }
+        }
+    }
+}
+// .plus{
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background-color: $header-black;
+//     color: $white;
+//     overflow: hidden;
+//     width: 100%;
+//     height: 0;
+//     transition: .5s;
+// }
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $header-black;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .i{
+    color: $white;
+    font-family: $QuattrocentoSansRegular;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  .work-b{
+        max-width: 360px;
+        width: 100%;
+        height: 265px;
+        margin-bottom: 40px;
+        &:hover{
+            opacity: .7;
+        }
+        &:hover .overlay{
+            height: 30%;
+      }
+        &:hover .plus{
+            height: 100%;
+            opacity: 0.5;
+            text-align: center;
+            vertical-align: middle;
+        }
+  }
+@media (max-width: 768px){
+    .works-box{
+        justify-content: center;
+    }
+}
+

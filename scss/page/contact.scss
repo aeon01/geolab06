@@ -1,0 +1,105 @@
+.contact{
+    margin-bottom: 100px;
+}
+.container-contact{
+    max-width: 495px;
+    width: 100%;
+    height: 405px;
+    font-family: $QuattrocentoSansRegular;
+    text-transform: uppercase;
+    top: 215px;
+    left: 50%;
+    background-color: $white;
+    padding: 30px;
+    z-index: 6;
+    label{
+        display: block;
+    }
+}
+input[type=text], select, textarea {
+    max-width: 240px;
+    width: 100%;
+    padding: 12px;
+    background-color: #eaeef1;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-right: 10px;
+    // z-index: 10;
+    // display: inline-block;
+}
+
+input[type=submit] {
+    background-color: $hover;
+    color: $white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: $QuattrocentoSansRegular;
+    text-transform: uppercase;
+     &:hover {
+        background-color: $hover;
+        opacity: .8;
+    }
+}
+.text-left{
+    h5{
+        text-transform: uppercase;
+        font-family: $QuattrocentoSansBold;
+        color: $black-primary;
+        padding: 60px 0 35px;
+        font-size: 20px;
+    }
+    p{
+        font-family: $OpenSansRegular;
+        color: $primary;
+        width: 50%;
+        height: 170px;
+        line-height: 1.7;
+        span{
+            color: #8d8f92;
+            font-weight: bold;
+        }
+    }
+}
+.t-contact{
+    margin-right: 25px;
+}
+@media (max-width: 996px){
+    .container-contact{
+        max-width: 240px;
+        width: 100%;
+        height: 205px;
+        font-family: $QuattrocentoSansRegular;
+        text-transform: uppercase;
+        top: 215px;
+        background-color: $white;
+        padding: 30px;
+        z-index: 6;
+        right: 0;
+    }
+    input[type=text], select, textarea {
+        max-width: 160px;
+        width: 100%;
+        padding: 12px;
+        background-color: #eaeef1;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 768px){
+    .container-contact{
+        right: 0;
+    }
+    .text-left{
+        padding-bottom: 70px;
+    }
+    .container-contact{
+        margin-top: 150px;
+    }
+}

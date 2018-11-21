@@ -1,0 +1,44 @@
+.banner-text{
+    padding-top: 219px;
+    h1{
+        text-transform: uppercase;
+        color: $white;
+        font-family: $QuattrocentoSansRegular;
+        font-size: 36px;
+    }
+    a{
+        text-transform: uppercase;
+        font-family: $QuattrocentoSansRegular;
+    }
+    p{
+        max-width: 648px;
+        width: 100%;
+        line-height: 1.5;
+        padding: 15px 0 50px 0;
+    }
+    ul{
+        max-width: 300px;
+        width: 100%;
+        a{  
+            color: $white;
+            border: 1px solid $white;
+            padding: 13px 20px;
+            border-radius: 4px;
+            transition: $transition;
+                &:hover{
+                    background-color: $hover;
+                    border: 1px solid $hover;
+                    cursor: pointer;
+                }
+        }
+    }
+}
+.banner{
+    background-image: url("../images/banner.jpg");
+    background-color: #cccccc;
+    width: 100%;
+    height: 660px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

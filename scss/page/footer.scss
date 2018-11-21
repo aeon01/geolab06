@@ -1,0 +1,17 @@
+footer{
+    background: $black-primary;
+    padding: 43px 0;
+    span{
+        color: $white;
+        font-family: $OpenSansRegular;
+        font-size: 13px;
+    }
+    a{
+        color: $white;
+        font-size: 18px;
+        margin-left: 20px;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
