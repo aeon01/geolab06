@@ -42,3 +42,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @media (max-width: 600px){
+    .banner-text{
+        text-align: center;
+        h1{
+            font-size: 30px;
+        }
+        ul{
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+}
