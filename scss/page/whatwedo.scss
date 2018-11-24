@@ -30,9 +30,22 @@ h2{
             background-color: $primary;
             opacity: .2;
             display: inline-block;
-            margin-right: 12px;
+            margin: 0 12px 0 20px;
      }
 }
-@media (max-width: 768px){
-    
+@media (max-width: 600px){
+    .what-we-do article:nth-child(n+5){
+        display: none;
+    }   
+}
+@media (max-width: 350px){
+    .container{
+        h2{
+            font-size: 28px;
+            padding: 80px 0 80px;
+            &::before{
+                display: none;
+            }
+        }
+    }
 }

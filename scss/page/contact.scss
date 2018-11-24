@@ -56,7 +56,6 @@ input[type=submit] {
         font-family: $OpenSansRegular;
         color: $primary;
         width: 50%;
-        height: 170px;
         line-height: 1.7;
         span{
             color: #8d8f92;
@@ -103,3 +102,39 @@ input[type=submit] {
         margin-top: 150px;
     }
 }
+@media (max-width: 600px){
+    .text-left{
+        margin-bottom: -70px;
+        display: block;
+        max-width: 400px;
+        width: 100%;
+        padding: 0 10px;
+        p{
+            width: 100%;
+        }
+    }
+    .container-contact{
+        display: none;
+    }
+}
+@media (max-width: 350px){
+    .contact{
+        h2{
+            font-size: 28px;
+            padding: 60px 0 60px;
+             &::before{
+                 display:  none;
+             }
+        }
+    }
+    // .text-left{
+    //     margin-bottom: -70px;
+    //     display: block;
+    //     max-width: 400px;
+    //     width: 100%;
+    //     p{
+    //         width: 100%;
+    //     }
+    // }
+}
+

@@ -47,10 +47,21 @@
         text-align: center;
         h1{
             font-size: 30px;
+            line-height: 1.2;
         }
         ul{
             max-width: 300px;
             width: 100%;
+        }
+    }
+}
+@media (max-width: 350px){
+    .banner-text{
+        ul{
+            flex-flow: column wrap;
+        }
+        li:nth-child(2){
+            margin-top: 50px;
         }
     }
 }

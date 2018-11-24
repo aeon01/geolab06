@@ -12,7 +12,7 @@
                 background-color: $primary;
                 opacity: .2;
                 display: inline-block;
-                margin-right: 12px;
+                margin: 0 12px;
          }
     }
 }
@@ -67,7 +67,7 @@
     }
 }
 .hr{
-    margin: 90px auto;
+    margin: 10px auto;
     border: 0;
     box-shadow: 0 0 1px 1px#A4AEAD;
     opacity: 0.2;
@@ -184,6 +184,31 @@
         }
         ul{
             justify-content: center;
+        }
+    }
+    .resp{
+        display: flex;
+        justify-content: center;
+        h5{
+            font-size: 25px;
+            padding: 50px 0 60px;
+        }
+    }
+}
+@media (max-width: 350px){
+    .about{
+        h5{
+            font-size: 25px;
+            padding: 40px 0 40px 25px;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .resp{
+        h5{
+            font-size: 25px;
+            padding: 40px 0 50px ;
         }
     }
 }
